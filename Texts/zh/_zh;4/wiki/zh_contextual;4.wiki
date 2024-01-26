@@ -1,0 +1,27 @@
+#article Unit
+#context unit
+#caption {unit.name}
+#table based_on=WikiHypertext
+	
+	#image size=90,90 asset=(unit.icon) based_on=square_icon
+
+	#table
+		#text style="caption" alignment = "left"
+		{unit.name}
+		#row
+		#text style="flavor_text"
+		[{unit.description}]
+	#/table
+	#separator padding.top = 20 padding.bottom = 20
+	//{Unit.atttributes_text}
+	#table based_on=UnitTooltipHT.atttributes
+	#/table
+	#row padding.top = 10
+[要求：{requirements}{p}]
+	#row padding.top = 10
+[費用：{cost}]
+#space flexible_width=1000
+[維護費用：{upkeep:plain}]
+#/table
+
+

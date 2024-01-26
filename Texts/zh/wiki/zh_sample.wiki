@@ -1,0 +1,64 @@
+#article SimpleArticle
+//#keywords text, attack, Crown Authority // ',' cannot be part of a keyword, but ' ' can
+//#keywords Empty, article // multiple #keywords are allowed
+//#keywords King, Prince, Patriarch, Ecumenical Patriarch, Pope
+//#keywords governing, governor, governed
+#keywords Pact, Pacts, Defensive Pact, Offensive Pact
+//#keywords Diplomat, Marshal, Cleric, Spy, Merchant, Merchants, Trade
+//#keywords Province, Provinces, Kingdom
+//#keywords wiki article, article
+//#category how_to //: do this
+//#category what_is: this
+#caption "Simple" Article
+This is {XXX:link}the simplest{/link} wiki article - just caption and text. // a comment
+//another comment
+Multiple lines are allowed.
+Ending a line with '\' \
+	continues to the next line without a line break.
+Markup like {b}bold{/b} and {i}italic{/i} just works.
+"Quotes" work as plain text.
+
+Empty lines in text are ignored, but can be done:
+{p}\
+Links can be as simple as {plr_kingdom.king}, {Barrels} or {wiki.HypertextArticle} or complex, like:
+{tab}{Barrels:link}a link to the {Barrels} {wiki.ResourcesReference:link}resource{/link}{/link}.
+{tab}{wiki.HypertextArticle:link}a link to another wiki article{/link}.
+'#' at the beginning of a line cannot be used (unless maybe escaped somehow)
+
+////#bug this is a bug
+
+
+#article HypertextArticle
+//#category how_to: do that
+//#category what_is: that
+//#keywords link, text, attack, Crown Authority, authority, article
+//#keywords wiki article, article
+//#keywords barrels
+#keywords Hypertext
+#caption Hypertext Article ({plr_kingdom})
+Some text
+
+#row
+	#table
+		#row alignment="center" spacing=20
+		#image based_on=circle_icon size=64,64 frame_color="white" asset=Barracks.icon //"Assets/UI/Elements/Actions/Icon_CharacterAction_NegotiatePeace.tga:Icon_CharacterAction_NegotiatePeace#2" // filling in the asset path may be inconvenient
+		//#space width=20
+		#text style="subcaption"
+		This caption will appear on the right of the image
+		//#space width=20
+		#table // this is a nested table
+			This text will appear on the right of the caption
+			#row
+			This text will appear bellow the previous text
+		#/table
+	#/table
+#row	
+	This text will appear bellow the image
+	#text
+	This text will appear on the right of the previous text
+#row
+	This text will appear bellow the previous 2 texts
+#separator
+This is a footer text
+
+

@@ -1,0 +1,32 @@
+#article TOC
+#TOC TOC_Description
+#keywords 王室圖書館
+#caption 王室圖書館
+
+{wiki.WhatIs}
+{tab}{blt_wiki_14}  {wiki.World}
+{tab}{blt_wiki_14}  {wiki.Knights}
+{tab}{blt_wiki_14}  {wiki.TownsAndProvinces}
+{tab}{blt_wiki_14}  {wiki.Kingdoms}
+{tab}{blt_wiki_14}  {wiki.Diplomacy}
+{tab}{blt_wiki_14}  {wiki.Warfare}
+{tab}{blt_wiki_14}  {wiki.TacticalBattles}
+
+{p}{wiki.HowTo}
+{tab}{blt_wiki_14}  {wiki.StartingTips}
+{tab}{blt_wiki_14}  {wiki.ProducingGold}
+{tab}{blt_wiki_14}  {wiki.MakingStrongArmy}
+{tab}{blt_wiki_14}  {wiki.DefendingTowns}
+
+{p}參考：
+{tab}{blt_wiki_14}  {wiki.BuildingsReference}
+{tab}{blt_wiki_14}  {wiki.ResourcesReference}
+{tab}{blt_wiki_14}  {wiki.ProvinceFeaturesReference}
+{tab}{blt_wiki_14}  {wiki.SettlementsReference}
+{tab}{blt_wiki_14}  {wiki.AdvantagesReference}
+{tab}{blt_wiki_14}  {wiki.UnitsReference}
+{tab}{blt_wiki_14}  {wiki.OpinionsReference}
+{tab}{blt_wiki_14}  {wiki.SkillsReference}
+{tab}{blt_wiki_14}  {wiki.TraditionsReference}
+
+

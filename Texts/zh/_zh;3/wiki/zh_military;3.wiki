@@ -1,0 +1,25 @@
+#article MilitiaUnits
+#category unit_category
+#caption 民兵單位
+#keywords 農民單位，所有農民單位，所有民兵單位，民兵單位
+農民和民兵是遊戲中最弱的單位，每個王國都可以招募他們。他們的主要優勢是他們的易得性——農民小隊的招募是最便宜的，而且不需要消耗王國徵兵且（幾乎）不花黃金。他們也是唯一不需要建造{Barracks.name}就能被招募的單位。
+{p}雖然他們的攻擊、防禦和攻城攻擊力都很低，但他們最大的弱點大概是韌性低。再加上軍隊士氣低落，這些單位很容易投降。不過他們有最高的基礎人力，因此有時如果士氣足夠高，他們憑藉人數優勢可以戰勝其他單位。
+{p}在大多數的遊戲加成機制中，農民和民兵單位不被視作步兵。此外，他們是唯一不能從戰鬥中獲得經驗的單位，其級別從不增加。
+{p}民兵單位是農民的升級變種，需要建造{VillageMilitia.name}才能被招募。
+
+
+#article Mercenaries
+#category military_category
+#caption 僱傭兵
+#keywords 僱傭兵們，僱傭兵，僱傭兵營地
+僱傭兵偶爾會出現，大多以紮營的形式等待僱傭。通過帶軍隊首領去找他們談條件即可僱用他們，並有可能得到單獨的小隊。僱傭兵在被僱傭之前，不會與遊戲中的任何派系形成敵對關係，也不能被攻擊。
+{p}單個僱傭兵小隊可以用黃金僱傭，比在城鎮里招募同樣的部隊要貴得多，但僱用時不需要徵兵、食物或人口，也沒有任何例如建築及升級之類的先決條件。一旦被僱傭，僱傭兵小隊的行為與在城鎮招募的小隊完全一致，並且會一直是僱主王國軍隊的一部分，直到被殲滅或被解散。至於那些因某支王國軍隊失去其領導者而出現的僱傭兵小隊，僱傭他們所需的費用要明顯地更便宜。
+{p}僱傭兵也可以作為軍隊被僱用。在這種情況下，他們需要黃金作為維護費用，並且不能像由王國的騎士領導的正規軍那樣被直接控制。可僱用他們來參與戰爭、幫助作戰，也可以讓他們去鎮壓叛軍，直到所有的戰爭都結束，或者叛亂已被完全鎮壓，屆時，與他們之間的委託關係會自動解除。也可以隨時解散他們，此外，當僱傭他們的王國無力負擔維護費用時，他們也會拒絕聽從之後的命令。
+//{p}Kingdom armies left without a leader for any reason — exile, death, a return to court, a crusade — also become camps. These camps remain loyal to their kingdom — though single squads can be hired by other kingdoms, they are free to their own kingdom.
+// and no one can hire the leaderless mercenaries as an army.
+//{p}Sometimes merchants also have the opportunity of hiring mercenaries from foreign lands as an army without needing their own kingdom's army to reach the mercenary camp.
+{p}有一些傳統能夠降低僱用僱傭兵所需的費用，軍隊的好感度也會影響到僱傭小隊或整支軍隊所需費用的高低。
+
+//------------------------------------------------------------------------------------------//
+
+

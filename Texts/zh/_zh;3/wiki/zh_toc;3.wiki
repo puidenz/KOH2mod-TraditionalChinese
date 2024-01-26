@@ -1,0 +1,8 @@
+#article ProvinceFeaturesReference
+#TOC ProvinceFeatures
+#caption 行省特色
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="ProvinceFeature"
+	#image size=47,47 asset=(instance.icon_big) based_on=square_icon
+	{instance}
+
+

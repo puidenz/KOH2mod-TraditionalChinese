@@ -1,0 +1,206 @@
+#article Building 
+#context building
+#caption {building.name}
+#table based_on=WikiHypertext cs_class="UIBuildingSlot" setup="SetupHTTooltip"
+	#image size=109,82 asset=(building.icon) based_on=rect_icon
+	#table
+		#text style="caption" alignment = "left"
+{building.name}（[{building.is_upgrade:if}升級|{wiki.BuildingsReference:link}建築]{/link}）
+		#row
+		#text style="flavor_text"
+		[{building.flavor}]
+	#/table
+	#separator padding.top = 10 padding.bottom = 10
+
+	#table
+		[{production_tooltip_text}]
+		#row
+		[{mods_tooltip_text}]
+		#row padding.top = 10
+[{section_header}產出商品：{/section_header}{p}{section_body}{produces_tooltip_text}{/section_body}]
+		#row padding.top = 10
+[{section_header}升級中產出商品：{/section_header}{p}{section_body}{produces_tooltip_text2}{/section_body}]
+		#row padding.top = 10
+		#table
+[{section_header}費用：{/section_header}{building.cost}]
+			#text alignment="right"
+[{section_header}維護費用：{/section_header}{building.upkeep:nonzero}{gold_icon}]
+		#/table			
+		#row padding.top = 10
+		{BuildingTooltipHT.requirements.prerequisites}
+		#row padding.top = 10
+		{BuildingTooltipHT.requirements.requires}
+	#/table	
+	
+	#row padding.top = 10
+[{num_upgrades:if}升級：]
+	#rows padding.top=2 possess_first_link=true populate=(building.upgrades.buildings) alignment="center"
+		#image size=74,47 asset=(instance.icon) based_on=rect_icon
+		{instance.def}
+	#row padding.top = 10
+[{building.is_upgrade:if}升級為：]
+	#rows padding.top=2 alignment="center" possess_first_link=true populate=(building.variant_of.upgrade_of || building.upgrade_of)
+		#image size=68,51 asset=(instance.icon) based_on=rect_icon
+		{instance.def}
+#/table
+
+
+#article Resource
+#context resource
+#caption {resource.name}
+#table based_on=WikiHypertext cs_class="UIResources" setup="SetupHTTooltip"
+	#image size=90,90 asset=(resource.icon) based_on=square_icon
+	#table
+		#text style="caption" alignment = "left"
+{resource.name}（{wiki.ResourcesReference:link}商品{/link}）
+		#row
+		#text style="flavor_text"
+		[{resource.tooltip}]
+	#/table
+	#separator padding.top = 10 padding.bottom = 10
+	#table spacing.vertical = 10
+		{ResourceTooltipHT.body.produced_in}
+		#row
+		{ResourceTooltipHT.body.required_for}
+		#row
+		{ResourceTooltipHT.body.province_feature}
+		#row
+		{ResourceTooltipHT.body.advantages}
+	#/table
+#/table
+
+
+#article ProvinceFeature
+#context feature
+#caption {feature.name}
+#table based_on=WikiHypertext
+	#image size=90,90 asset=(feature.icon_big) based_on=square_icon
+	#table
+		#text style="caption" alignment = "left"
+{feature.name}（{wiki.ProvinceFeaturesReference:link}行省特色{/link}）
+		#row
+		#text style="flavor_text"
+		[{feature.tooltip}]
+	#/table
+#/table
+
+
+#article Settlement
+#context settlement
+#caption {settlement.name}
+#table based_on=WikiHypertext
+	#image size=120,80 asset=(settlement.icon) based_on=rect_icon
+	#table
+		#text style="caption" alignment = "left"
+{settlement.name}（{wiki.SettlementsReference:link}定居點{/link}）
+		#row
+		#text //style="flavor_text"
+		[{settlement.description}]
+	#/table
+#/table
+
+
+#article KingdomAdvantage
+#context advantage
+#caption {advantage.name}
+#table based_on=WikiHypertext cs_class="UIKingdomAdvantage"	setup="SetupHTAdvantage"
+	#image size=222,141 asset=(advantage.illustration) based_on=rect_icon
+	#table
+		#text style="caption" alignment = "left"
+{advantage.name}（{wiki.AdvantagesReference:link}優勢{/link}）
+		#row
+		#text style="flavor_text"
+		[{advantage.description}]
+	#/table
+	#separator padding.top = 20 padding.bottom = 20
+	{KingdomAdvantageTooltipHT.bonuses}
+	#row
+	{KingdomAdvantageTooltipHT.requires}
+	#row
+	{KingdomAdvantageTooltipHT.requires_religion}
+	#row
+	{KingdomAdvantageTooltipHT.requires_or}
+#/table
+
+
+#article Unit
+#context unit
+#caption {unit.name}
+#table based_on=WikiHypertext
+	
+	#image size=90,90 asset=(unit.icon) based_on=square_icon
+
+	#table
+		#text style="caption" alignment = "left"
+		{unit.name}
+		#row
+		#text style="flavor_text"
+		[{unit.description}]
+	#/table
+	#separator padding.top = 20 padding.bottom = 20
+	{Unit.atttributes_text}
+	#row padding.top = 10
+[要求：{requirements}{p}]
+	#row padding.top = 10
+[費用：{cost}]
+#space flexible_width=1000
+[維護費用：{upkeep:plain}]
+#/table
+
+
+#article Opinion
+#context opinion
+#caption {opinion.name}
+#table based_on=WikiHypertext
+	
+	#image size=203,77 asset=(opinion.illustration) based_on=rect_icon
+
+	#table
+		#text style="caption" alignment = "left"
+{opinion.name}好感度（{wiki.OpinionsReference:link}{/link}）
+		#row
+		#text style="flavor_text"
+		[{opinion.tooltip}]
+	#/table
+	#separator padding.top = 20 padding.bottom = 20
+{b}效果取決於數值（從-10到+10）：
+	#rows populate=(opinion.mods)
+	{min_val:bonus} - {max_val:bonus} {stat_name}
+#/table
+
+
+#article Skill
+#context skill
+#caption {skill.name}
+#table based_on=WikiHypertext cs_class="UISkill" //setup="SetupHTTooltip"
+	#image size=90,90 asset=(skill.icon[0]) based_on=circle_icon
+	#table
+		#text style="caption" alignment = "left"
+{skill.name}（{wiki.SkillsReference:link}技能{/link}）
+		#row
+		#text style="flavor_text"
+		[{skill.tooltip}]
+	#/table
+	#separator padding.top = 20 //padding.bottom = 10
+	#rows based_on=SkillTooltipHT.sections
+#/table
+
+
+#article Tradition
+#context tradition
+#caption {tradition.name}
+#table based_on=WikiHypertext cs_class="UIDynastyTradition" setup="SetupHTTooltip"
+	#image size=90,90 asset=(tradition.icon) based_on=square_icon
+	#table
+		#text style="caption" alignment = "left"
+{tradition.name}（{wiki.TraditionsReference:link}傳統{/link}）
+		#row
+		#text style="flavor_text"
+		[{tradition.tooltip}]
+	#/table
+	#separator padding.top = 20 padding.bottom = 20
+	#table based_on=TraditionTooltipHT.effects
+	#/table
+#/table
+
+

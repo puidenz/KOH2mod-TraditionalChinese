@@ -1,0 +1,160 @@
+#article TOC
+#TOC TOC_Description
+#keywords 王室圖書館
+#caption 王室圖書館
+
+{wiki.WhatIs}
+{tab}{blt_wiki_14}  {wiki.World}
+{tab}{blt_wiki_14}  {wiki.Knights}
+{tab}{blt_wiki_14}  {wiki.TownsAndProvinces}
+{tab}{blt_wiki_14}  {wiki.Kingdoms}
+{tab}{blt_wiki_14}  {wiki.Diplomacy}
+{tab}{blt_wiki_14}  {wiki.Warfare}
+{tab}{blt_wiki_14}  {wiki.TacticalBattles}
+
+{p}{wiki.HowTo}
+
+{p}參考：
+{tab}{blt_wiki_14}  {wiki.BuildingsReference}
+{tab}{blt_wiki_14}  {wiki.ResourcesReference}
+{tab}{blt_wiki_14}  {wiki.ProvinceFeaturesReference}
+{tab}{blt_wiki_14}  {wiki.SettlementsReference}
+{tab}{blt_wiki_14}  {wiki.AdvantagesReference}
+{tab}{blt_wiki_14}  {wiki.UnitsReference}
+{tab}{blt_wiki_14}  {wiki.OpinionsReference}
+{tab}{blt_wiki_14}  {wiki.SkillsReference}
+{tab}{blt_wiki_14}  {wiki.TraditionsReference}
+
+
+#article TOC_Description
+#caption 歡迎
+歡迎遊玩《榮譽騎士2：君主》！
+{p}在王室圖書館這裡，我們將努力幫助你瞭解更多關於我們遊戲的世界、機制和組成部分。
+{p}你可以通過這個面板左側的按鈕來瀏覽該圖書館的主要部分。面板底部的按鈕將幫助你回溯和前進，以及檢視你讀過的所有文獻的歷史。你也可以按「退格」鍵返回。
+{p}所有突出顯示的關鍵詞都是圖書館內的文獻鏈接，如果一個關鍵詞指向不止一篇文獻，你將看到一個可供挑選的所有相關文獻列表。
+
+
+#article History
+#TOC
+#caption 歷史
+歷史：
+#rows based_on=WikiTOCRow populate="PopulateHistory"
+{tab}{instance.link}
+
+
+#article Keyword
+#TOC
+#caption {q}{context_str:#}{q}
+{q}{noparse}{context_str:#}{/noparse}{q}：
+#rows based_on=WikiTOCRow populate="PopulateKeyword" keyword=(context_str)
+{tab}{instance.def_field}
+
+
+#article WhatIs
+#TOC
+#caption 瞭解……
+#keywords 瞭解
+瞭解：
+#rows based_on=WikiTOCRow populate="PopulateCategory" category="what_is"
+	{tab}{blt_wiki_14}  {instance.link_open}{instance.link_text}{instance.link_close}
+
+
+#article WhatIs_Description
+#caption 瞭解……
+在這一部分，你可以找到關於遊戲特色、組成元素及它們如何運作的資訊。
+{p}如果要尋找如何實現某種目標或克服某種障礙的幫助，你可以轉而訪問{wiki.HowTo}部分。
+{p}你想了解些什麼？
+
+
+#article BuildingsReference
+#TOC BuildingsUpgrades
+#caption 建築
+// #rows based_on=WikiTOCRow padding.top=5 populate="PopulateDefs" type="Building" validate=(!instance.is_upgrade) alignment="center"
+// 	#image size=40,32 asset=(instance.icon) //based_on=square_icon frame=null//frame_color="white"
+// 	{instance}
+#rows based_on=WikiTOCRow populate="PopulateDefs" type="District" validate=(instance.buildable && !instance.is_common_or_pf) alignment="center"
+	#table
+		{instance.name}
+		#separator padding.bottom = 10 color = "103,90,62, 128"
+		#rows based_on=WikiIconTOCRow populate=(instance.buildings)
+			//#space width=5
+			#image size=68,51 asset=(instance.def.icon) based_on=rect_icon 
+{instance.def}
+	#/table
+#row
+手工業和工業
+#separator padding.bottom = 5
+#rows based_on=WikiIconTOCRow populate=(CommonDistrict.DEF.buildings)
+	//#space width=0
+	#image size=74,47 asset=(instance.def.icon) based_on=rect_icon 
+	{instance.def}
+#rows based_on=WikiIconTOCRow populate=(PFDistrict.DEF.buildings)
+	//#space width=0
+	#image size=74,47 asset=(instance.def.icon) based_on=rect_icon 
+	{instance.def}
+
+
+#article ResourcesReference
+#TOC Resources
+#caption 商品
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="Resource"
+	#image size=47,47 asset=(instance.icon) based_on=square_icon
+	{instance}
+
+
+#article ProvinceFeaturesReference
+#TOC ProvinceFeatures
+#caption 行省特色
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="ProvinceFeature"
+	#image size=47,47 asset=(instance.icon) based_on=square_icon
+	{instance}
+
+
+#article SettlementsReference
+#TOC Settlements
+#caption 定居點型別
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="Settlement" hide_unnamed=true
+	#image size=74,47 asset=(instance.icon) based_on=rect_icon
+	{instance}
+
+
+#article AdvantagesReference
+#TOC
+#caption 王國優勢
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="KingdomAdvantage"
+	#image size=74,47 asset=(instance.illustration) based_on=rect_icon
+	{instance}
+
+
+#article UnitsReference
+#TOC Units_Description
+#caption 單位
+#rows based_on=WikiIconTOCRow  populate="PopulateDefs" type="Unit" hide_unnamed=true
+	#image size=47,47 asset=(instance.icon) based_on=square_icon //frame_color="white"
+	{instance}
+
+
+#article OpinionsReference
+#TOC Opinions
+#caption 好感度
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="Opinion"
+	#image size=25,27 asset=(instance.icon) based_on=square_icon
+	{instance}
+
+
+#article SkillsReference
+#TOC Skills
+#caption 技能
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="Skill"
+	#image size=47,47 asset=(instance.icon[0]) based_on=circle_icon
+	{instance}
+
+
+#article TraditionsReference
+#TOC KingdomTraditions
+#caption 傳統
+#rows based_on=WikiIconTOCRow populate="PopulateDefs" type="Tradition"
+	#image size=47,47 asset=(instance.icon[0]) based_on=square_icon
+	{instance}
+
+

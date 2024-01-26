@@ -1,0 +1,4 @@
+*;base;
+Title.corruptedData.caption;Error;
+Title.corruptedData.corruptedData;The game could not fully load due to corrupted file data.;
+Title.corruptedData.confirm;Ok;

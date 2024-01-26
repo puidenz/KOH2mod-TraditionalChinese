@@ -1,0 +1,28 @@
+#article Keyword
+#TOC
+#caption {q}{context_str:#}{q}
+{q}{noparse}{context_str:#}{/noparse}{q}：
+#rows based_on=WikiTOCRow populate="PopulateKeyword" keyword=(context_str)
+{tab}{instance.def_field}
+#rows based_on=WikiTOCRow populate="PopulateKeywordResource" keyword=(context_str)
+{tab}{instance}（資源）
+#rows based_on=WikiTOCRow populate="PopulateKeywordProvinceFeature" keyword=(context_str)
+{tab}{instance}（特色）
+#rows based_on=WikiTOCRow populate="PopulateKeywordSettlement" keyword=(context_str)
+{tab}{instance}（定居點）
+#rows based_on=WikiTOCRow populate="PopulateKeywordKingdomAdvantage" keyword=(context_str)
+{tab}{instance}（優勢）
+#rows based_on=WikiTOCRow populate="PopulateKeywordUnit" keyword=(context_str)
+{tab}{instance}（單位）
+#rows based_on=WikiTOCRow populate="PopulateKeywordOpinion" keyword=(context_str)
+{tab}{instance}（好感度）
+#rows based_on=WikiTOCRow populate="PopulateKeywordSkill" keyword=(context_str)
+{tab}{instance}（技能）
+#rows based_on=WikiTOCRow populate="PopulateKeywordTradition" keyword=(context_str)
+{tab}{instance}（傳統）
+#rows based_on=WikiTOCRow populate="PopulateKeywordBuldings" keyword=(context_str)
+{tab}{instance.def}（建築）
+#rows based_on=WikiTOCRow populate="PopulateKeywordUpgrades" keyword=(context_str)
+{tab}{instance.def}（升級-{instance.def.upgrade_of}）
+
+
