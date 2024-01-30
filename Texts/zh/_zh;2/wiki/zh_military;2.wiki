@@ -2,7 +2,7 @@
 #category unit_category
 #caption 守衛單位
 #keywords 守衛部隊，守衛單位
-步兵單位可以輕裝或重灌，它在大多數王國都可用，且還有幾種特殊單位——如{Halberdier_Special.name}和{Flemish_Pikeman_Special.name}。
+步兵單位可以輕裝或重裝，它在大多數王國都可用，且還有幾種特殊單位——如{Halberdier_Special.name}和{Flemish_Pikeman_Special.name}。
 {p}守衛單位與步兵類似，但有兩個明顯的優勢：他們有更高的防禦和韌性，因此能更長時間地抵禦敵軍的攻擊；他們對陣騎兵單位時也有巨大的加成。他們的造價也比步兵要便宜。
 {p}守衛單位的缺點是速度慢且攻擊力低，因此在直接面對普通步兵時必然會輸。
 {p}守衛單位被視作步兵，因此能獲得步兵的所有加成和懲罰。反之則不然——有一些效果是專門適用於他們的，例如使韌性增加的{InfantryTacticsSkill.name}技能。
